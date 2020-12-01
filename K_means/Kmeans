@@ -1,0 +1,32 @@
+import numpy as np # linear algebra
+import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+from sklearn.cluster import KMeans 
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import normalize
+from sklearn.metrics import pairwise_distances
+from nltk.tokenize import word_tokenize
+from nltk.stem.porter import PorterStemmer
+from nltk.corpus import stopwords
+from bs4 import BeautifulSoup
+from scipy.stats import multivariate_normal as mvn
+import nltk
+import os
+import random
+
+
+
+
+import string
+# Input data files are available in the "../input/" directory.
+# For example, running this (by clicking run or pressing Shift+Enter) will list the files in the input directory
+
+# email module has some useful functions
+import matplotlib.pyplot as plt
+%matplotlib inline
+plt.style.use('fivethirtyeight')
+
+import os, sys, email,re
+print(os.listdir("../input"))
+
+# Any results you write to the current directory are saved as output.
